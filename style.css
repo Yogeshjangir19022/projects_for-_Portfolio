@@ -1,0 +1,122 @@
+/* Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header & Navbar */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+header h1::before {
+  content: "🎮";
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #00bfff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #1e90ff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: 
+    linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)),
+    url('https://as2.ftcdn.net/jpg/05/64/31/67/1000_F_564316725_zE8llusnCk3Sfr9rdfKya6fV7BQbjfyV.webp') 
+    no-repeat center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  border-radius: 10px;
+}
+
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+  color: #ccc;
+}
+
+.hero a {
+  display: inline-block;
+  margin: 20px 10px 0;
+  padding: 12px 24px;
+  background-color: #00bfff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.hero a:hover {
+  background-color: #1e90ff;
+}
+
+/* Stats Section */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-item {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 191, 255, 0.1);
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  color: #00ffcc;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: #aaa;
+}
